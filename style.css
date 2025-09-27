@@ -1,0 +1,40 @@
+/*Basic styling for the portfolio page */
+Body {
+  Font-family: Time new roman, sans-serif; /* font*/
+  Background-color: # f0f8ff; /* color for background */
+  Marge: 20px;
+
+}
+
+Header, footer {
+  text-align: center;
+  Padding:10px;
+
+}
+
+h1{
+  color: darkblue;
+
+}
+h2{
+  color: darkgreen;
+
+}
+
+ul {
+  list-style-type:non; /*removes default bullets */
+  padding: 0;/* no left indent */
+
+}
+li {
+  margin-bottom:10px; /* space between links*/
+
+}
+a{
+  text-decoration: none; /*  remove underline*/
+  color:#1a0dab
+
+}
+a:hover {
+  text-decoration: underline; /* underline on hover */
+}
