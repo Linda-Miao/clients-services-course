@@ -1,0 +1,128 @@
+html {
+  background: linear-gradient(135deg, #99cc33 0%, #88bb22 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px 0;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 12pt;
+  line-height: 1.6;
+  margin: 20px;
+  max-width: 8.5in;
+  width: 100%;
+  background: white;
+  padding: 50px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+
+/* Sender's Address */
+address {
+  font-style: normal;
+  margin: 0 0 30px 0;
+  line-height: 1.8;
+  color: #333;
+}
+
+/* Date */
+p {
+  margin: 0 0 12pt 0;
+  text-align: left;
+}
+
+/* Main paragraphs */
+p {
+  text-align: left;
+  margin-bottom: 12pt;
+}
+
+/* Headings */
+h1 {
+  font-size: 12pt;
+  font-weight: normal;
+  margin: 0 0 12pt 0;
+  text-align: left;
+}
+
+h2 {
+  font-size: 12pt;
+  font-weight: bold;
+  margin: 18pt 0 12pt 0;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 6pt;
+}
+
+/* Lists */
+ul, ol {
+  margin: 0 0 12pt 0.5in;
+  padding-left: 0.25in;
+  line-height: 1.8;
+}
+
+li {
+  margin-bottom: 8pt;
+  text-align: left;
+}
+
+/* Definition List */
+dl {
+  margin: 0 0 12pt 0;
+}
+
+dt {
+  font-weight: bold;
+  margin-top: 12pt;
+  margin-bottom: 6pt;
+}
+
+dd {
+  margin: 0 0 12pt 0.5in;
+  text-align: left;
+}
+
+/* Abbreviations */
+abbr {
+  cursor: help;
+  border-bottom: 1px dotted #999;
+}
+
+/* Time element */
+time {
+  color: #555;
+}
+
+/* Signature space */
+.signature-space {
+  height: 60px;
+  border-bottom: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+/* Strong text for signature */
+strong {
+  font-weight: bold;
+}
+
+/* Closing paragraph */
+p:last-of-type {
+  margin-top: 30px;
+}
+
+/* Print styles */
+@media print {
+  html {
+    background: white;
+  }
+  
+  body {
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+  }
+}

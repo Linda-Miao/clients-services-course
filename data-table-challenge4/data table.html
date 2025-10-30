@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planets Data</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+            background-color: #ffffff;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: #000;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        p {
+            margin-bottom: 20px;
+            color: #333;
+            line-height: 1.6;
+            font-size: 0.95em;
+            text-align: center;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #f0f0f0;
+            border: 1px solid #999;
+        }
+
+        thead {
+            background-color: #c0c0c0;
+        }
+
+        th {
+            border: 1px solid #999;
+            padding: 10px 8px;
+            text-align: center;
+            font-size: 0.85em;
+            font-weight: bold;
+            color: #000;
+            background-color: #c0c0c0;
+        }
+
+        td {
+            border: 1px solid #999;
+            padding: 10px 8px;
+            text-align: center;
+            font-size: 0.85em;
+            background-color: #f0f0f0;
+        }
+
+        /* Category column (first 2 columns) */
+        th:first-child,
+        th:nth-child(2) {
+            background-color: #c0c0c0;
+            text-align: center;
+        }
+
+        td:first-child {
+            background-color: #d3d3d3;
+            font-weight: bold;
+            text-align: left;
+            width: 110px;
+        }
+
+        td:nth-child(2) {
+            background-color: #f0f0f0;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        /* Data cells - right align */
+        td:nth-child(n+3) {
+            text-align: right;
+            padding-right: 12px;
+            background-color: #f0f0f0;
+        }
+
+        /* White background for all data rows */
+        tbody tr {
+            background-color: #f0f0f0;
+        }
+
+        /* Consistent borders */
+        tbody tr td {
+            border-color: #999;
+        }
+
+        /* Responsive design */
+        @media (max-width: 1024px) {
+            body {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            th, td {
+                padding: 8px 6px;
+                font-size: 0.75em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Planets data</h1>
+    
+    <p>Data about the planets of our solar system (Planetary facts taken from <a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/" target="_blank">Nasa's Planetary Fact Sheet - Metric</a>).</p>
+    
+    <table>
+        <colgroup>
+            <col span="2">
+        </colgroup>
+        <thead>
+            <tr>
+                <th colspan="2"></th>
+                <th>Name</th>
+                <th>Mass (10<sup>24</sup>kg)</th>
+                <th>Diameter (km)</th>
+                <th>Density (kg/m<sup>3</sup>)</th>
+                <th>Gravity (m/s<sup>2</sup>)</th>
+                <th>Length of day (hours)</th>
+                <th>Distance from Sun (10<sup>6</sup>km)</th>
+                <th>Mean temperature (°C)</th>
+                <th>Number of moons</th>
+                <th>Notes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="4"><strong>Terrestrial planets</strong></td>
+                <td><strong>Mercury</strong></td>
+                <td>0.330</td>
+                <td>4,879</td>
+                <td>5427</td>
+                <td>3.7</td>
+                <td>4222.6</td>
+                <td>57.9</td>
+                <td>167</td>
+                <td>0</td>
+                <td>Closest to the Sun</td>
+            </tr>
+            <tr>
+                <td><strong>Venus</strong></td>
+                <td>4.87</td>
+                <td>12,104</td>
+                <td>5243</td>
+                <td>8.9</td>
+                <td>2802.0</td>
+                <td>108.2</td>
+                <td>464</td>
+                <td>0</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>Earth</strong></td>
+                <td>5.97</td>
+                <td>12,756</td>
+                <td>5514</td>
+                <td>9.8</td>
+                <td>24.0</td>
+                <td>149.6</td>
+                <td>15</td>
+                <td>1</td>
+                <td>Our world</td>
+            </tr>
+            <tr>
+                <td><strong>Mars</strong></td>
+                <td>0.642</td>
+                <td>6,792</td>
+                <td>3933</td>
+                <td>3.7</td>
+                <td>24.7</td>
+                <td>227.9</td>
+                <td>-65</td>
+                <td>2</td>
+                <td>The red planet</td>
+            </tr>
+            <tr>
+                <td rowspan="3"><strong>Jovian planets</strong></td>
+                <td rowspan="2"><strong>Gas giants</strong></td>
+                <td><strong>Jupiter</strong></td>
+                <td>1898</td>
+                <td>142,984</td>
+                <td>1326</td>
+                <td>23.1</td>
+                <td>9.9</td>
+                <td>778.6</td>
+                <td>-110</td>
+                <td>67</td>
+                <td>The largest planet</td>
+            </tr>
+            <tr>
+                <td><strong>Saturn</strong></td>
+                <td>568</td>
+                <td>120,536</td>
+                <td>687</td>
+                <td>9.0</td>
+                <td>10.7</td>
+                <td>1433.5</td>
+                <td>-140</td>
+                <td>62</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td rowspan="2"><strong>Ice giants</strong></td>
+                <td><strong>Uranus</strong></td>
+                <td>86.8</td>
+                <td>51,118</td>
+                <td>1271</td>
+                <td>8.7</td>
+                <td>17.2</td>
+                <td>2872.5</td>
+                <td>-195</td>
+                <td>27</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>Neptune</strong></td>
+                <td>102</td>
+                <td>49,528</td>
+                <td>1638</td>
+                <td>11.0</td>
+                <td>16.1</td>
+                <td>4495.1</td>
+                <td>-200</td>
+                <td>14</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><strong>Dwarf planets</strong></td>
+                <td><strong>Pluto</strong></td>
+                <td>0.0146</td>
+                <td>2,370</td>
+                <td>2095</td>
+                <td>0.7</td>
+                <td>153.3</td>
+                <td>5906.4</td>
+                <td>-225</td>
+                <td>5</td>
+                <td>Declassified as a planet in 2006, but this <a href="https://en.wikipedia.org/wiki/Pluto" target="_blank">remains controversial</a>.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

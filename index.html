@@ -1,49 +1,172 @@
 <!DOCTYPE html>
-<html lang="en"> <!-- English shows on website -->
+<html lang="en">
 <head>
-  <meta charset="UTF-8"> <!-- character encoding -->
-  <title>My GitHub Pages Portfolio</title>
-  <link rel="stylesheet" href="style.css"> <!-- Link to external css file for styling -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linda Miao - Web Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <header>
-  <h1>Linda Miao</h1>
-  </header>
-</body>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Linda Miao</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-<main>
-  <h2>My Finished Assessments</h2>
-  <ul>
-    <li>
-      <a href="html-structuring.html" target="_blank">
-        HTML - Structuring the web
-      </a>
-    </li>
-    <li>
-      <a href="intro-html.html" target="_blank">
-        Introduction to HTML
-      </a>
-     </li>
-     <li>
-       <a href="multimedia-embedding.html" target="_blank">
-        Multimedia and embedding
-        </a>
-      </li>
-      <li>
-       <a href="html-tables.html" target="_blank">
-        HTML tables
-        </a>
-       </li>
-  </ul>
-</main>
-  <footer>
-    <p>Portfolio hosted on<a href="https://pages.github.com/" target="_blank"> GitHub Pages</a></p>
-  </footer>
+    <!-- HERO SECTION -->
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>Web Developer & Designer</h1>
+            <p>Building beautiful and functional web experiences</p>
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+        </div>
+    </header>
 
-  <script src="script.js"></script> <!-- Optional: link to my JavaScript file -->
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>My HTML Challenges</h2>
+            <p class="section-subtitle">Demonstrating HTML, CSS, and responsive design skills</p>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-icon">📄</div>
+                    <h3>Challenge 1: Letter Markup</h3>
+                    <p>A formal business letter with semantic HTML, proper text formatting, and professional styling.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Typography</span>
+                    </div>
+                    <a href="./introduction-to-html-challenge1/making-up-letter-structuring.html" class="btn btn-secondary">View Project</a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-icon">🐦</div>
+                    <h3>Challenge 2: Birdwatching Site</h3>
+                    <p>A multimedia website featuring navigation, image galleries, and responsive two-column layout.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Layout</span>
+                    </div>
+                    <a href="./birdWatching-challenge2/birdWatching.html" class="btn btn-secondary">View Project</a>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-icon">🐛</div>
+                    <h3>Challenge 3: Creepy Crawly</h3>
+                    <p>A splash page with embedded images, video content, and engaging design for insects showcase.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>Media</span>
+                        <span>Video</span>
+                    </div>
+                    <a href="./creepy-crawlies-splash-page-challenge3/creepy-crawlies-splash-page.html" class="btn btn-secondary">View Project</a>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-icon">🌍</div>
+                    <h3>Challenge 4: Planets Data Table</h3>
+                    <p>An accessible data table with semantic HTML, proper table structure, and styling for solar system data.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>Tables</span>
+                        <span>Data</span>
+                    </div>
+                    <a href="./data-table-challenge4/data%20table.html" class="btn btn-secondary">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About This Portfolio</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Web Development Fundamentals</h3>
+                    <p>
+                        This portfolio showcases my journey through HTML and web development fundamentals. 
+                        Each project demonstrates different aspects of web design and development, from semantic 
+                        HTML structure to responsive CSS layouts and interactive design patterns.
+                    </p>
+                    <h3>Skills Demonstrated</h3>
+                    <ul class="skills-list">
+                        <li>✓ Semantic HTML5 Structure</li>
+                        <li>✓ CSS Styling & Layouts</li>
+                        <li>✓ Responsive Design</li>
+                        <li>✓ Data Tables & Accessibility</li>
+                        <li>✓ Multimedia Integration</li>
+                        <li>✓ Typography & Spacing</li>
+                    </ul>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <div class="stat-number">4</div>
+                        <div class="stat-label">Challenges Completed</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">HTML5 Semantic</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">∞</div>
+                        <div class="stat-label">Learning</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p class="section-subtitle">Let's create something amazing together</p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>📧 Email: <a href="mailto:ymiao5@uw.edu" style="color: white;">ymiao5@uw.edu</a></p>
+                    <p>🔗 GitHub: <a href="https://github.com/Linda-Miao" target="_blank" style="color: white;">github.com/Linda-Miao</a></p>
+                    <p>💼 LinkedIn: <a href="https://www.linkedin.com/in/linda-m-14166517a/" target="_blank" style="color: white;">linkedin.com/in/linda-m</a></p>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Linda Miao. All rights reserved.</p>
+            <p>Built with HTML, CSS, and JavaScript | MDN Learning Path</p>
+            <p><a href="https://github.com/Linda-Miao" style="color: #fff; text-decoration: none;">Follow me on GitHub →</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
- 
-

@@ -1,0 +1,157 @@
+/* General body styling */
+body {
+  background-color: #99cc33;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Header styling */
+header {
+  background-color: #99cc33;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Cinzel Decorative", serif;
+  font-size: 48px;
+  margin: 0;
+  color: #333;
+}
+
+h1 img {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+/* Navigation styling */
+nav {
+  background-color: #99cc33;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 0;
+}
+
+nav li {
+  margin: 0;
+  flex: 1;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #99cc33;
+  border-right: 1px solid #999;
+}
+
+nav li:last-child a {
+  border-right: none;
+}
+
+nav a:hover {
+  background-color: #88bb22;
+}
+
+/* Main content area */
+main {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background-color: #999;
+}
+
+/* Article styling */
+article {
+  flex: 3;
+  background-color: #99cc33;
+  padding: 20px;
+}
+
+article h2 {
+  font-family: "Cinzel Decorative", serif;
+  font-size: 36px;
+  margin-top: 0;
+  color: #333;
+}
+
+article p {
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Aside styling */
+aside {
+  flex: 1;
+  background-color: #99cc33;
+  padding: 20px;
+}
+
+aside h2 {
+  font-family: "Cinzel Decorative", serif;
+  font-size: 28px;
+  text-align: center;
+  margin-top: 0;
+  color: #333;
+}
+
+/* Image grid styling */
+aside {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+aside h2 {
+  grid-column: 1 / -1;
+}
+
+aside a {
+  display: block;
+  overflow: hidden;
+}
+
+aside img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 2px solid #999;
+}
+
+aside a:hover img {
+  transform: scale(1.05);
+  transition: transform 0.2s;
+}
+
+/* Footer styling */
+footer {
+  background-color: #999;
+  color: #333;
+  padding: 20px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+footer a {
+  color: #000;
+}
+
+footer p {
+  margin: 10px 0;
+}
