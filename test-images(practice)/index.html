@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Images</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Images in HTML</h1>
+            <p class="subtitle">Practice Exercises - Images, Figures, and Captions</p>
+            <a href="../../index.html" class="btn-back">← Back to Portfolio</a>
+        </header>
+
+        <!-- TASK 1: BASIC IMAGES -->
+        <section class="task-section">
+            <h2>Task 1: Basic Image Tags</h2>
+            <p class="task-intro">Learn the fundamentals of embedding images in HTML.</p>
+            
+            <div class="task-content">
+                <h3>Simple Image Tag</h3>
+                <div class="code-block">
+                    <code>&lt;img src="image.jpg" alt="Description of image"&gt;</code>
+                </div>
+
+                <h3>Image with Dimensions</h3>
+                <div class="code-block">
+                    <code>&lt;img src="image.jpg" alt="Description" width="400" height="300"&gt;</code>
+                </div>
+
+                <h3>Key Attributes:</h3>
+                <ul>
+                    <li><strong>src</strong> - Source path to the image (required)</li>
+                    <li><strong>alt</strong> - Alternative text for accessibility (required)</li>
+                    <li><strong>width</strong> - Width in pixels (optional)</li>
+                    <li><strong>height</strong> - Height in pixels (optional)</li>
+                    <li><strong>title</strong> - Tooltip text on hover</li>
+                </ul>
+
+                <h3>Image Formats:</h3>
+                <ul>
+                    <li><strong>JPG/JPEG</strong> - Best for photographs</li>
+                    <li><strong>PNG</strong> - Best for graphics with transparency</li>
+                    <li><strong>GIF</strong> - Good for animations</li>
+                    <li><strong>WebP</strong> - Modern format with better compression</li>
+                    <li><strong>SVG</strong> - Scalable vector graphics</li>
+                </ul>
+            </div>
+
+            <div class="task-note">
+                <strong>Accessibility Tips:</strong>
+                <ul>
+                    <li>Always include descriptive alt text</li>
+                    <li>Alt text should be concise but informative</li>
+                    <li>For decorative images, use empty alt: <code>alt=""</code></li>
+                    <li>Include relevant details users need to understand</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- TASK 2: IMAGE PATHS -->
+        <section class="task-section">
+            <h2>Task 2: Image Paths and Sources</h2>
+            <p class="task-intro">Understand different ways to reference image files.</p>
+            
+            <div class="task-content">
+                <h3>Relative Path (Same Folder)</h3>
+                <div class="code-block">
+                    <code>&lt;img src="image.jpg" alt="Image"&gt;</code>
+                </div>
+                <p>For images in the same directory as the HTML file.</p>
+
+                <h3>Relative Path (Subfolder)</h3>
+                <div class="code-block">
+                    <code>&lt;img src="images/image.jpg" alt="Image"&gt;</code>
+                </div>
+                <p>For images in a subfolder named "images".</p>
+
+                <h3>Relative Path (Parent Folder)</h3>
+                <div class="code-block">
+                    <code>&lt;img src="../image.jpg" alt="Image"&gt;</code>
+                </div>
+                <p>Use ../ to go up one directory level.</p>
+
+                <h3>Absolute Path (Full URL)</h3>
+                <div class="code-block">
+                    <code>&lt;img src="https://example.com/image.jpg" alt="Image"&gt;</code>
+                </div>
+                <p>For images hosted on external servers.</p>
+            </div>
+
+            <div class="task-note">
+                <strong>Path Tips:</strong>
+                <ul>
+                    <li>Use relative paths for local files (easier to move)</li>
+                    <li>Use absolute URLs only for external images</li>
+                    <li>Organize images in a dedicated folder</li>
+                    <li>Use consistent naming conventions (lowercase, no spaces)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- TASK 3: RESPONSIVE IMAGES -->
+        <section class="task-section">
+            <h2>Task 3: Responsive and Optimized Images</h2>
+            <p class="task-intro">Learn best practices for responsive and performance-optimized images.</p>
+            
+            <div class="task-content">
+                <h3>Max-Width for Responsive Images</h3>
+                <div class="code-block">
+                    <code>&lt;img src="image.jpg" alt="Image" style="max-width: 100%; height: auto;"&gt;</code>
+                </div>
+
+                <h3>Image Optimization Tips:</h3>
+                <ul>
+                    <li>Reduce file size using compression tools</li>
+                    <li>Use appropriate format for image type</li>
+                    <li>Provide multiple sizes for different devices</li>
+                    <li>Lazy loading for images below the fold</li>
+                    <li>Use CDN for faster delivery</li>
+                </ul>
+            </div>
+
+            <div class="task-note">
+                <strong>Performance Best Practices:</strong>
+                <ul>
+                    <li>Optimize images before uploading</li>
+                    <li>Use modern formats like WebP when possible</li>
+                    <li>Implement lazy loading for below-the-fold images</li>
+                    <li>Provide alt text for all images</li>
+                    <li>Test on different screen sizes</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- TASK 4: FIGURES AND CAPTIONS -->
+        <section class="task-section">
+            <h2>Task 4: Using Figures and Captions</h2>
+            <p class="task-intro">Learn semantic HTML for images with captions using &lt;figure&gt; and &lt;figcaption&gt;.</p>
+            
+            <div class="task-content">
+                <h3>Figure with Caption</h3>
+                <div class="code-block">
+                    <code>&lt;figure&gt;<br>
+                    &nbsp;&nbsp;&lt;img src="image.jpg" alt="A colorful butterfly"&gt;<br>
+                    &nbsp;&nbsp;&lt;figcaption&gt;A monarch butterfly resting on a flower.&lt;/figcaption&gt;<br>
+                    &lt;/figure&gt;</code>
+                </div>
+
+                <h3>When to Use Figure:</h3>
+                <ul>
+                    <li>Images referenced from the main text</li>
+                    <li>Images with explanatory captions</li>
+                    <li>Illustrations, diagrams, or charts</li>
+                    <li>Photos with important context</li>
+                </ul>
+            </div>
+
+            <div class="task-note">
+                <strong>📝 Semantic HTML Benefits:</strong>
+                <ul>
+                    <li>Improves accessibility for screen readers</li>
+                    <li>Provides semantic meaning to content</li>
+                    <li>Better SEO for images</li>
+                    <li>Makes code more maintainable</li>
+                    <li>Helps with styling consistency</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- SUMMARY -->
+        <section class="summary">
+            <h2>Learning Syntax Summary</h2>
+            <div class="summary-grid">
+                <div class="summary-item">
+                    <h4>📷 Basic Images</h4>
+                    <p>Use &lt;img&gt; with src and alt attributes for all images.</p>
+                </div>
+                <div class="summary-item">
+                    <h4>🗂️ Image Paths</h4>
+                    <p>Understand relative and absolute paths for image sources.</p>
+                </div>
+                <div class="summary-item">
+                    <h4>📱 Responsive</h4>
+                    <p>Make images responsive with max-width and srcset.</p>
+                </div>
+                <div class="summary-item">
+                    <h4>Figures</h4>
+                    <p>Use &lt;figure&gt; and &lt;figcaption&gt; for semantic image captions.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEXT STEP -->
+        <section class="next-step">
+            <h2>Ready for the Challenge?</h2>
+            <p>Move on to the challenge!</p>
+            <a href="../creepy-crawlies-splash-page-challenge3/creepy-crawlies-splash-page.html" class="btn btn-primary">Go to Challenge →</a>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 HTML Learning Path | Practice Exercises</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Multimedia and Embedding</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Multimedia and Embedding</h1>
+            <p class="subtitle">Practice Exercises - Images, Audio, Video, and Embedding</p>
+            <a href="../../index.html" class="btn-back">← Back to Portfolio</a>
+        </header>
+
+        <!-- TASK 1: IMAGES -->
+        <section class="task-section">
+            <h2>Task 1: Working with Images</h2>
+            <p class="task-intro">Learn how to embed and describe images using the &lt;img&gt; tag.</p>
+            
+            <div class="task-content">
+                <h3>Image Tag Syntax</h3>
+                <div class="code-block">
+                    <code>&lt;img src="image.jpg" alt="Description of image"&gt;</code>
+                </div>
+
+                <h3>Key Attributes:</h3>
+                <ul>
+                    <li><strong>src</strong> - Source/path to the image file</li>
+                    <li><strong>alt</strong> - Alternative text for accessibility</li>
+                    <li><strong>width</strong> - Width of the image in pixels</li>
+                    <li><strong>height</strong> - Height of the image in pixels</li>
+                </ul>
+
+                <h3>Live Examples:</h3>
+                <div class="examples-grid">
+                    <figure class="example-figure">
+                        <img src="https://images.theconversation.com/files/625049/original/file-20241010-15-95v3ha.jpg?ixlib=rb-4.1.0&rect=140%2C0%2C2305%2C1536&q=75&auto=format&w=768&h=512&fit=crop&dpr=1" alt="Ocean waves at sunset" width="100%" height="300">
+                        <figcaption>Ocean waves at sunset</figcaption>
+                    </figure>
+                    <figure class="example-figure">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop" alt="Snow-capped mountain peak" width="100%" height="300">
+                        <figcaption>Snow-capped mountain peak</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="task-note">
+                <strong>Best Practices:</strong>
+                <ul>
+                    <li>Always include descriptive <code>alt</code> text for accessibility</li>
+                    <li>Use appropriate image formats (JPG, PNG, WebP)</li>
+                    <li>Optimize image sizes for web (reduce file size)</li>
+                    <li>Provide relative paths for local images</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- TASK 2: AUDIO -->
+        <section class="task-section">
+            <h2>Task 2: Embedding Audio</h2>
+            <p class="task-intro">Learn how to embed audio files using the &lt;audio&gt; tag.</p>
+            
+            <div class="task-content">
+                <h3>Audio Tag Syntax</h3>
+                <div class="code-block">
+                    <code>&lt;audio controls&gt;<br>
+                    &nbsp;&nbsp;&lt;source src="audio.mp3" type="audio/mpeg"&gt;<br>
+                    &nbsp;&nbsp;the browser does not support the audio element.<br>
+                    &lt;/audio&gt;</code>
+                </div>
+
+                <h3>Key Attributes:</h3>
+                <ul>
+                    <li><strong>controls</strong> - Shows play, pause, volume controls</li>
+                    <li><strong>autoplay</strong> - Automatically plays when page loads</li>
+                    <li><strong>loop</strong> - Repeats the audio when it finishes</li>
+                    <li><strong>muted</strong> - Audio starts muted</li>
+                </ul>
+
+                <h3>Live Example - Try the Audio Player:</h3>
+                <div class="example-box">
+                    <p><strong>Audio Example 1: Forest Ambience</strong></p>
+                    <audio controls style="width: 100%; margin: 15px 0;">
+                        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                        The browser does not support the audio element.
+                    </audio>
+
+                    <p><strong>Audio Example 2: Nature Sounds</strong></p>
+                    <audio controls style="width: 100%; margin: 15px 0;">
+                        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+                        The browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <h3>Supported Formats:</h3>
+                <ul>
+                    <li>MP3 (audio/mpeg)</li>
+                    <li>WAV (audio/wav)</li>
+                    <li>OGG (audio/ogg)</li>
+                </ul>
+            </div>
+
+            <div class="task-note">
+                <strong>Key Concepts:</strong>
+                <ul>
+                    <li>Always provide fallback text for older browsers</li>
+                    <li>Use &lt;source&gt; tags for multiple formats (browser compatibility)</li>
+                    <li>Audio files should be reasonably sized for web use</li>
+                    <li>Avoid autoplaying audio (respect user experience)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- TASK 3: VIDEO -->
+        <section class="task-section">
+            <h2>Task 3: Embedding Video</h2>
+            <p class="task-intro">Learn how to embed video files using the &lt;video&gt; tag.</p>
+            
+            <div class="task-content">
+                <h3>Video Tag Syntax</h3>
+                <div class="code-block">
+                    <code>&lt;video width="320" height="240" controls&gt;<br>
+                    &nbsp;&nbsp;&lt;source src="video.mp4" type="video/mp4"&gt;<br>
+                    &nbsp;&nbsp;The browser does not support the video tag.<br>
+                    &lt;/video&gt;</code>
+                </div>
+
+                <h3>Key Attributes:</h3>
+                <ul>
+                    <li><strong>controls</strong> - Shows play, pause, timeline controls</li>
+                    <li><strong>width</strong> - Video player width</li>
+                    <li><strong>height</strong> - Video player height</li>
+                    <li><strong>poster</strong> - Image shown before video plays</li>
+                    <li><strong>autoplay</strong> - Automatically plays on page load</li>
+                    <li><strong>loop</strong> - Repeats video when finished</li>
+                </ul>
+
+                <h3>Live Example - Try the Video Player:</h3>
+                <div class="example-box">
+                    <p><strong>Sample Video</strong></p>
+                    <video width="100%" height="400" controls poster="https://images.unsplash.com/photo-1495489159686-ffc9f7e22bb1?w=800&h=400&fit=crop" style="margin: 15px 0; border-radius: 8px;">
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                        The browser does not support the video tag.
+                    </video>
+                </div>
+
+                <h3>Supported Formats:</h3>
+                <ul>
+                    <li>MP4 (video/mp4) - Most common</li>
+                    <li>WebM (video/webm)</li>
+                    <li>OGG (video/ogg)</li>
+                </ul>
+            </div>
+
+            <div class="task-note">
+                <strong>Best Practices:</strong>
+                <ul>
+                    <li>Always include <code>width</code> and <code>height</code> attributes</li>
+                    <li>Use multiple &lt;source&gt; tags for browser compatibility</li>
+                    <li>Add a <code>poster</code> image for better UX</li>
+                    <li>Provide fallback content for unsupported browsers</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- TASK 4: EMBEDDING EXTERNAL CONTENT -->
+        <section class="task-section">
+            <h2>Task 4: Embedding External Content (iframe)</h2>
+            <p class="task-intro">Learn how to embed external web pages and videos using &lt;iframe&gt;.</p>
+            
+            <div class="task-content">
+                <h3>IFrame Tag Syntax</h3>
+                <div class="code-block">
+                    <code>&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/4UPKe2tKz54"<br>
+                    &nbsp;&nbsp;title="YouTube video player" frameborder="0" allowfullscreen&gt;<br>
+                    &lt;/iframe&gt;</code>
+                </div>
+
+                <h3>Key Attributes:</h3>
+                <ul>
+                    <li><strong>src</strong> - URL of the page to embed</li>
+                    <li><strong>width</strong> - Width of the iframe</li>
+                    <li><strong>height</strong> - Height of the iframe</li>
+                    <li><strong>frameborder</strong> - Shows/hides border (0 = no border)</li>
+                    <li><strong>allowfullscreen</strong> - Allows fullscreen mode</li>
+                    <li><strong>title</strong> - Accessibility title</li>
+                </ul>
+
+                <h3>Live Examples - Embedded Content:</h3>
+                
+                <h4>Example 1: Embedded YouTube Video</h4>
+                <div class="example-box">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/watch?v=4UPKe2tKz54" title="YouTube music, enjoy it" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="margin: 15px 0; border-radius: 8px;"></iframe>
+                </div>
+
+                <h4>Example 2: Embedded Google Map</h4>
+                <div class="example-box">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290355!2d-74.00601!3d40.71128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a23e285cb65%3A0x40c6a5770666d8d!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1234567890" width="100%" height="400" style="border:0; margin: 15px 0; border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <h3>Common Uses:</h3>
+                <ul>
+                    <li>Embedding YouTube videos</li>
+                    <li>Embedding Google Maps</li>
+                    <li>Embedding external web pages</li>
+                    <li>Embedding interactive content</li>
+                    <li>Embedding tweets or social media</li>
+                </ul>
+            </div>
+
+            <div class="task-note">
+                <strong>Security Considerations:</strong>
+                <ul>
+                    <li>Only embed content from trusted sources</li>
+                    <li>Use <code>sandbox</code> attribute to restrict permissions</li>
+                    <li>Always include accessibility attributes like <code>title</code></li>
+                    <li>Test embedded content across different browsers</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- SUMMARY -->
+        <section class="summary">
+            <h2>Learning Syntax Summary</h2>
+            <div class="summary-grid">
+                <div class="summary-item">
+                    <h4>📷 Images</h4>
+                    <p>Use &lt;img&gt; with src and alt attributes for responsive, accessible images.</p>
+                </div>
+                <div class="summary-item">
+                    <h4>🔊 Audio</h4>
+                    <p>Use &lt;audio&gt; with controls and source tags for embedded sound.</p>
+                </div>
+                <div class="summary-item">
+                    <h4>🎬 Video</h4>
+                    <p>Use &lt;video&gt; with width/height and source tags for embedded video.</p>
+                </div>
+                <div class="summary-item">
+                    <h4>🔗 Embedding</h4>
+                    <p>Use &lt;iframe&gt; to embed external content like YouTube or Maps.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEXT STEP -->
+        <section class="next-step">
+            <h2>Ready for the Challenge?</h2>
+            <p>Move on to the challenge!</p>
+            <a href="../birdWatching-challenge2/birdWatching.html" class="btn btn-primary">Go to Challenge →</a>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 HTML Learning Path | Practice Exercises</p>
+        </footer>
+    </div>
+</body>
+</html>
